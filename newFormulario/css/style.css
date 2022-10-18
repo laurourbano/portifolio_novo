@@ -5,6 +5,8 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
+  display: flex;
+  flex-direction: row;
   background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));
   width: 100vw;
   height: 100vh;
@@ -12,11 +14,29 @@ body{
   justify-content: center;
   align-items: center;
 }
+.wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
 .box{
+  display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px;
   border-radius: 15px;
-  width: 35%;
+  width: 80%;
+}
+.box form {
+  width: 100%;
 }
 fieldset{
   border: 3px solid dodgerblue;
