@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+
     <title>Viviane Urbano | Consultoria de Imagem</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="box">
-        <div class="wrapper">
-            <h1>Viviane<span style="color: purple;">Urbano</span> | Consultoria de Imagem</h1>
+      <div class="wrapper">
+        <h1>
+          Viviane<span>Urbano</span> | Consultoria de
+          Imagem
+        </h1>
+      </div>
+      <div class="wrapper">
+        <div class="image">
+          <img src="foto.jpg" alt="imagem de Viviane Urbano | Consultoria de Imagem" />
         </div>
-        <div class="wrapper">
-            <div class="image">
-                <img src="#" alt="imagem de Viviane Urbano | Consultoria de Imagem">
+        <div class="form">
+          <form
+            action="https://formsubmit.co/lauro@outlook.com.br"
+            method="POST"
+          >
+            <div class="input-box">
+              <label class="label" for="nome">Nome</label>
+              <input class="input" type="text" name="nome" id="nome" />
             </div>
-            <div class="form">
-                <form action="https://formsubmit.co/lauro@outlook.com.br" method="POST">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo...">
-                    <input type="submit" value="enviar">
-                </form>
+
+            <div class="input-box">
+              <label class="label" for="email">E-mail</label>
+              <input class="input" type="email" name="email" id="email" />
             </div>
+
+            <div class="input-box">
+              <label class="label" for="telefone">Telefone</label>
+              <input class="input" type="tel" name="telefone" id="telefone" />
+            </div>
+
+            <div class="input-box">
+              <label for="data_nasc">Data de Nascimento</label>
+              <input type="date" name="data_nasc" id="data_nasc" />
+            </div>
+
+            <input class="button" type="submit" value="enviar" />
+          </form>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
