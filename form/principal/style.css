@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pirata+One&display=swap');
+
+:root {
+    --font-primaria: 'Dancing Script', 'cursive';
+    --font-secundária: 'Pirata One', 'cursive';
+    
+}
+
+h1 {
+    font-family: var(--font-primaria);
+    font-size: 3rem;
+}
