@@ -1,92 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 :root {
-    --font-primaria: 'Dancing Script', 'open-sans';
-    --font-secundaria: sans-serif;
-    --cor-primaria: #441394;
-    --cor-secundaria: #f1f2f3;
-    --cor-botoes: rgba(98, 0, 110, 0.5);
+    --font-primaria: 'Dancing Script', Verdana;
+    --cor-primaria: #350053;
+    --cor-secundaria: #bbcad8;
+    --cor-botoes: rgba(21, 46, 119, 0.575);
+    --hover: rgba(54, 74, 141, 0.888);
+    --cor-span: #9a3cba;
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font-secundaria);
-    color: var(--cor-secundaria);
-
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 body {
-    background-color: rgba(30, 0, 88, 0.88);
+    background-color: var(--cor-primaria);
+    font-family: var(--font-primaria);
+
+    color: var(--cor-secundaria);
     width: 100%;
     height: 100vh;
 }
-
-h1, span {
-    font-family: var(--font-primaria);
-    font-size: 3rem;
+span{
+    color: var(--cor-span);
 }
-
-.image {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.image img {
+.box {
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-}
-
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     flex-direction: column;
-    width: 100%;
-    margin: 0 10px;
-
 }
-
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--font-primaria);
+    font-size: 2rem;
+}
+.titulo button {
+    background-color: var(--cor-primaria);
+    outline: none;
+    border: none;
+}
+.titulo button i {
+    font-size: 2rem;
+    color: var(--cor-span);
+}
+.titulo button i:hover {
+    color:var(--cor-secundaria)
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px;
+}
+.image {
+    width: 100%;
+}
+.image img {
+    width: 100%;
+    height: 80vh;
+}
+.form {
+    width: 100%;
+    margin: 0px 20px;
+}
 .input-box {
     display: flex;
-    flex: 1;
-    width: 100%;
-}
-
-.input {
-    display: flex;
     position: relative;
-    padding: 10px;
-    border-radius: 5px;
-
+    flex-direction: column;
 }
-
-.input, .label {
-    margin: 25px 0;
-    width: 100%;
-}
-
-input, label {
-    margin: 25px 0;
-
-}
-
-.label {
-    position: absolute;
-    width: 200px;
-    color: red;
-    z-index: 1;
-    margin: 25px;
-
-}
-
- .button {
-    width: 100%;
-    background-color: var(--cor-botoes);
-    margin-top: 50px;
-    padding: 20px;
+.input {
+    margin: 10px 0;
+    padding: 10px 0;
     border-radius: 15px;
+    outline: none;
+}
+a, .button{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    background-color: rgba(35, 66, 155, 0.575);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+a:hover, .button:hover {
+    background-color: rgba(35, 68, 177, 0.888);
 }
